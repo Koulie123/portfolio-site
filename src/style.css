@@ -1,0 +1,30 @@
+:root {
+    --cyan-3: #67e8f9;
+    --cyan-2: #a5f3fc;
+    --cyan-1: #cffafe;
+    --cyan-0: #ecfeff;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 150px;
+}
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr clamp(25rem, 40rem, 1200px) 1fr;
+    background-color: var(--cyan-1);
+    min-height: 500px;
+}
+
+.center-content {
+    grid-column: 2/3;
+    background-color: var(--cyan-0);
+}
