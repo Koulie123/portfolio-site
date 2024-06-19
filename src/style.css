@@ -3,6 +3,8 @@
     --cyan-2: #a5f3fc;
     --cyan-1: #cffafe;
     --cyan-0: #ecfeff;
+    --yellow-2: #fef08a;
+    --yellow-1: #fef9c3;
 }
 
 
@@ -13,18 +15,47 @@ html, body {
 .header {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    height: 150px;
+    background-color: var(--cyan-3);
 }
-
+.header > div > button {
+    background-color: var(--yellow-2);
+    width: 8rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+}
+.header > div > button:hover {
+    background-color: var(--yellow-1);
+}
+.header-div > a {
+    color: inherit;
+    text-decoration: none;
+}
 
 .main-container {
     display: grid;
-    grid-template-columns: 1fr clamp(25rem, 40rem, 1200px) 1fr;
+    grid-template-columns: 1fr clamp(25rem, 60rem, 1200px) 1fr;
     background-color: var(--cyan-1);
-    min-height: 500px;
+    min-height: 4000px;
 }
 
 .center-content {
     grid-column: 2/3;
     background-color: var(--cyan-0);
+    display: grid;
+    grid-template-rows: 20rem;
+    overflow: hidden;
+}
+.name-and-pic {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.pic-of-me {
+    display: flex;
+    justify-content: center;
+}
+.pic-of-me > img {
+    width: 80%;
+    box-shadow: 5px 3px 5px black;
 }
