@@ -5,19 +5,34 @@
     --cyan-0: #ecfeff;
     --yellow-2: #fef08a;
     --yellow-1: #fef9c3;
+    --slate-95: #020617;
+    --slate-8: #1e293b;
+    --slate-6: #475569;
+    font-family: sans-serif;
 }
-
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Regular.ttf) format('truetype');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto-italic';
+    src: url(./fonts/Roboto-Italic.ttf);
+}
 
 html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 .header {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    background-color: var(--cyan-3);
+    background-color: var(--slate-95);
+    width: 100%;
+    /* position: fixed; */
 }
-.header > div > button {
+.header > div > a >  button {
     background-color: var(--yellow-2);
     width: 8rem;
     height: 3rem;
@@ -44,12 +59,16 @@ html, body {
     grid-column: 2/3;
     background-color: var(--cyan-0);
     display: grid;
-    grid-template-rows: 20rem;
+    grid-template-rows: 3rem 25rem 3rem auto 3rem auto 3rem auto;
+    gap: 20px;
     overflow: hidden;
 }
 .name-and-pic {
     display: grid;
     grid-template-columns: 40% 60%;
+}
+.about-me {
+    padding: 1rem;
 }
 .pic-of-me {
     display: flex;
@@ -58,4 +77,34 @@ html, body {
 .pic-of-me > img {
     width: 80%;
     box-shadow: 5px 3px 5px black;
+}
+.section-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto-italic';
+    font-size: 2rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit,15rem);
+    gap: 1rem;
+    padding: 1rem;
+}
+.project {
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 2px solid var(--slate-8);
+    border-radius: 2rem;
+    box-shadow: 2px 2px 2px var(--slate-6);
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+}
+.project > div >  a {
+    color: inherit;
+}
+.project > .project-name {
+    font-size: 1.3rem;
 }
