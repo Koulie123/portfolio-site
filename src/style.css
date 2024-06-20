@@ -30,7 +30,9 @@ html, body {
     grid-template-columns: repeat(6, 1fr);
     background-color: var(--slate-95);
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
+    height: 5rem;
+    top: 0;
 }
 .header > div > a >  button {
     background-color: var(--yellow-2);
@@ -39,6 +41,8 @@ html, body {
     border-radius: 1.5rem;
     margin-top: 1.2rem;
     margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 .header > div > button:hover {
     background-color: var(--yellow-1);
@@ -50,7 +54,7 @@ html, body {
 
 .main-container {
     display: grid;
-    grid-template-columns: 1fr clamp(25rem, 60rem, 1200px) 1fr;
+    grid-template-columns: 1fr clamp(25rem, 65rem, 1200px) 1fr;
     background-color: var(--cyan-1);
     min-height: 4000px;
 }
@@ -59,16 +63,17 @@ html, body {
     grid-column: 2/3;
     background-color: var(--cyan-0);
     display: grid;
-    grid-template-rows: 3rem 25rem 3rem auto 3rem auto 3rem auto;
+    grid-template-rows: 3rem 26rem 3rem 28rem 3rem auto 3rem auto;
     gap: 20px;
     overflow: hidden;
+    margin-top: 5rem;
+    padding: 3rem;
 }
 .name-and-pic {
     display: grid;
     grid-template-columns: 40% 60%;
 }
 .about-me {
-    padding: 1rem;
 }
 .pic-of-me {
     display: flex;
@@ -84,6 +89,8 @@ html, body {
     text-align: center;
     font-family: 'Roboto-italic';
     font-size: 2rem;
+    padding-top: 100px;
+    margin-top: -90px;
 }
 
 .projects {
@@ -91,7 +98,6 @@ html, body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto-fit,15rem);
     gap: 1rem;
-    padding: 1rem;
 }
 .project {
     box-sizing: border-box;

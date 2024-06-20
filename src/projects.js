@@ -10,7 +10,7 @@ const projects = [
     new Project("Slow Cyclist Adventure Guild", "https://slowcyclistadventureguide.ca/", "This is a larger projecct I made detailing some bikepacking routes in Southern Ontario. Specifically aiming to provide routes which were accessible via public transit."),
     new Project("Restaurant Page", "https://koulie123.github.io/restaurtant-page/", "Site made to showcase ability to use js modules to display all data without needing to reload the page."),
     new Project("Tic-Tac-Toe", "https://koulie123.github.io/TicTacToe/", "This is a basic Tic-tac-toe Game that I made"),
-    new Project("fake Project", "", "This is a placeholder for now."),
+    new Project("C# Console Game", "https://kouliesgames.itch.io/consoleroguelite", "This is a basic command line game build in C# which I did when learning about C# and OOP. In it you play as a character exploring the world through simple commands."),
 
 ]
 export default function displayProjects (parent) {
