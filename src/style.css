@@ -8,6 +8,11 @@
     --slate-95: #020617;
     --slate-8: #1e293b;
     --slate-6: #475569;
+    --slate-5: #64748b;
+    --blue-8: #1e40af;
+    --blue-1: #dbeafe;
+    --mdn-blue-background: #8cb4ff70;
+    --mdn-blue: #8cb4ff;
     font-family: sans-serif;
 }
 @font-face {
@@ -27,15 +32,19 @@ html, body {
 }
 .header {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     background-color: var(--slate-95);
     width: 100%;
     position: fixed;
     height: 5rem;
     top: 0;
 }
+.header > div {
+    display: flex;
+    justify-content: center;
+}
 .header > div > a >  button {
-    background-color: var(--yellow-2);
+    background-color: var(--slate-6);
     width: 8rem;
     height: 3rem;
     border-radius: 1.5rem;
@@ -43,9 +52,12 @@ html, body {
     margin-bottom: 1rem;
     font-weight: 600;
     font-size: 1.2rem;
+    border: 0;
+    color: white;
 }
-.header > div > button:hover {
-    background-color: var(--yellow-1);
+.header > div > a> button:hover {
+    background-color: var(--mdn-blue-background);
+    color: var(--mdn-blue);
 }
 .header-div > a {
     color: inherit;
@@ -54,8 +66,8 @@ html, body {
 
 .main-container {
     display: grid;
-    grid-template-columns: 1fr clamp(25rem, 65rem, 1200px) 1fr;
-    background-color: var(--cyan-1);
+    grid-template-columns: 1fr clamp(15rem, 40rem, 1200px) 1fr;
+    background-color: var(--slate-6);
     min-height: 4000px;
 }
 
@@ -63,11 +75,15 @@ html, body {
     grid-column: 2/3;
     background-color: var(--cyan-0);
     display: grid;
-    grid-template-rows: 3rem 26rem 3rem 28rem 3rem auto 3rem auto;
+    grid-template-rows: 3rem 26rem 1px 3rem 28rem 1px 3rem auto 1px 3rem auto;
     gap: 20px;
     overflow: hidden;
     margin-top: 5rem;
     padding: 3rem;
+}
+.divider {
+    box-sizing: border-box;
+    border: 1px solid black;
 }
 .name-and-pic {
     display: grid;
@@ -113,4 +129,13 @@ html, body {
 }
 .project > .project-name {
     font-size: 1.3rem;
+}
+
+.footer {
+    background-color: var(--slate-95);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
 }
