@@ -124,14 +124,18 @@ html, body {
     box-shadow: 2px 2px 2px var(--slate-6);
     display: grid;
     grid-template-rows: 2rem 1fr;
+    scroll-behavior: auto;
+    overflow-y: scroll;
 }
 .project > div >  a {
     color: inherit;
 }
 .project > .project-name {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
+.project-description {
 
+}
 .footer {
     background-color: var(--slate-95);
     color: white;
