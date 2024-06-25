@@ -67,7 +67,7 @@ html, body {
 
 .main-container {
     display: grid;
-    grid-template-columns: 1fr clamp(15rem, 40rem, 1200px) 1fr;
+    grid-template-columns: 1fr clamp(15rem, 45rem, 1200px) 1fr;
     background-color: var(--slate-6);
     min-height: 4000px;
 }
@@ -98,7 +98,8 @@ html, body {
 }
 .pic-of-me > img {
     width: 80%;
-    box-shadow: 5px 3px 5px black;
+    box-shadow: 3px 2px 2px black;
+    aspect-ratio: 1 / 1;
 }
 .section-header {
     display: flex;

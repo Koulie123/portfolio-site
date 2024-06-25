@@ -1,5 +1,5 @@
 import './style.css';
-import PictureOfMe from './images/SmallPicOfMe.jpg';
+import PictureOfMe from './images/PortfolioPicCopy.jpg';
 import displayProjects from './projects.js';
 
 
