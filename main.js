@@ -187,9 +187,9 @@ html, body {
         grid-template-rows: 5rem 26rem 1px 3rem 65rem 1px 3rem auto 1px 3rem auto;
 
     }
-    .name-and-pic {
-        grid-template-columns: 1fr;
-    }
+    // .name-and-pic {
+    //     grid-template-columns: 1fr;
+    // }
     .projects {
         grid-template-columns: 1fr;
     }
