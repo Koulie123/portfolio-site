@@ -76,6 +76,7 @@ html, body {
     grid-column: 2/3;
     background-color: var(--cyan-0);
     display: grid;
+    /* grid-template-rows: repeat(auto-fit, auto); */
     grid-template-rows: 3rem 26rem 1px 3rem 28rem 1px 3rem auto 1px 3rem auto;
     gap: 20px;
     overflow: hidden;
@@ -146,6 +147,17 @@ html, body {
     height: 4rem;
 }
 
+.contact-section {
+     font-size: 1.6rem;
+}
+.contact-section > div {
+    display: flex;
+    justify-content: left;
+}
+.contact-section > div > a {
+    color: black;
+}
+
 
 
 @media (max-width: 680px){
@@ -154,11 +166,13 @@ html, body {
     }
     .center-content {
         grid-column: 1/2;
-        grid-template-rows: 5rem 26rem 1px 3rem 65rem 1px 3rem auto 1px 3rem auto;
+        grid-template-rows: 5rem 40rem 1px 3rem 65rem 1px 3rem auto 1px 3rem auto;
+        overflow: wrap;
 
     }
     .name-and-pic {
         grid-template-columns: 1fr;
+        width: 100%;
     }
     .projects {
         grid-template-columns: 1fr;
@@ -166,6 +180,10 @@ html, body {
     .header > div > a >  button {
         font-size: 1rem;
         width: 5rem;
+    }
+    .pic-of-me {
+        width: 90%;
+        height: 90%;
     }
 
 
