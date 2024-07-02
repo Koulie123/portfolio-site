@@ -14,6 +14,7 @@
     --mdn-blue-background: #8cb4ff70;
     --mdn-blue: #8cb4ff;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: 'Roboto';
@@ -69,7 +70,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr clamp(15rem, 45rem, 1200px) 1fr;
     background-color: var(--slate-6);
-    min-height: 4000px;
+    /* min-height: 4000px; */
 }
 
 .center-content {
@@ -110,6 +111,7 @@ html, body {
     font-size: 2rem;
     padding-top: 100px;
     margin-top: -90px;
+    font-weight: 700;
 }
 
 .projects {
@@ -138,6 +140,9 @@ html, body {
 .project-description {
 
 }
+.about-para {
+    padding-top: .5rem;
+}
 .footer {
     background-color: var(--slate-95);
     color: white;
@@ -162,13 +167,15 @@ html, body {
 
 @media (max-width: 680px){
     .main-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 99vw;
     }
     .center-content {
         grid-column: 1/2;
         grid-template-rows: 5rem 40rem 1px 3rem 65rem 1px 3rem auto 1px 3rem auto;
-        overflow: wrap;
 
+    }
+    .subsection {
+        width: 100%;
     }
     .name-and-pic {
         grid-template-columns: 1fr;
@@ -176,6 +183,9 @@ html, body {
     }
     .projects {
         grid-template-columns: 1fr;
+    }
+    .projects > .project {
+        width: 85vw;
     }
     .header > div > a >  button {
         font-size: 1rem;
