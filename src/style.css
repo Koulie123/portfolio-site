@@ -16,6 +16,9 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+* {
+    box-sizing: border-box;
+}
 @font-face {
     font-family: 'Roboto';
     src: url(./fonts/Roboto-Regular.ttf) format('truetype');
@@ -167,7 +170,7 @@ html, body {
 
 @media (max-width: 680px){
     .main-container {
-        grid-template-columns: 99vw;
+        grid-template-columns: 100vw;
     }
     .center-content {
         grid-column: 1/2;
