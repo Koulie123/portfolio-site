@@ -174,7 +174,7 @@ html, body {
     }
     .center-content {
         grid-column: 1/2;
-        grid-template-rows: 5rem 40rem 1px 3rem 65rem 1px 3rem auto 1px 3rem auto;
+        grid-template-rows: 5rem 40rem 1px 3rem auto 1px 3rem auto 1px 3rem auto;
         padding-left: 0rem;
         padding-right: 0rem;
 
