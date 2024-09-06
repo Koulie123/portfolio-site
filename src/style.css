@@ -189,7 +189,7 @@ html, body {
         width: 100%;
     }
     .pic-of-me {
-        width: 90%;
+        width: 100%;
     }
     .projects {
         grid-template-columns: 1fr;
