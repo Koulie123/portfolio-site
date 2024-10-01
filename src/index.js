@@ -14,6 +14,6 @@ const setPicture = function () {
 
 
 setPicture();
-const letter = 7;
+const letter = 8;
 const projectContainer =  document.querySelector('.projects');
 displayProjects(projectContainer);
