@@ -102,9 +102,12 @@ html, body {
     justify-content: center;
 }
 .pic-of-me > img {
+    object-fit: contain;
     width: 80%;
-    box-shadow: 3px 2px 2px black;
-    aspect-ratio: 1 / 1;
+    height: auto;
+    /* box-shadow: 3px 2px 2px black; */
+    /* aspect-ratio: 1 / 1; */
+    
 }
 .section-header {
     display: flex;
@@ -196,6 +199,7 @@ html, body {
         display: block;
         object-fit: scale-down;
         box-shadow: none;
+        box-shadow: 3px 2px 2px black;
 
     }
     .projects {
